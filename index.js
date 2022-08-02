@@ -1,7 +1,4 @@
-//
-// let slides = document.querySelector('.mySlides');
-// console.log(slides)
-// slides.style.display = 'none';
+
 
 // select the different images
 let img1 = document.querySelector('.one');
@@ -21,7 +18,9 @@ imgArray.push(img3);
 let currImage = imgArray[0];
 currImage.style.display = 'inline';
 
-// console.log(currImage);
+
+
+
 
 // global counter of current image
 let i = 0;
@@ -36,13 +35,20 @@ function arrowClickLeft() {
         console.log(i);
         currImage = imgArray[i];
         currImage.style.display ='inline';
+
+
     } else {
         i -= 1;
         console.log(i);
         currImage = imgArray[i];
         currImage.style.display ='inline';
+
+
+
     }
 
+    clearInterval(startInterval);
+    startInterval = setInterval(arrowClickRight, 2000, '');
 }
 
 function arrowClickRight() {
@@ -54,12 +60,20 @@ function arrowClickRight() {
         console.log(i);
         currImage = imgArray[i];
         currImage.style.display ='inline';
+
+
+
     } else {
         i += 1;
         console.log(i);
         currImage = imgArray[i];
         currImage.style.display ='inline';
     }
-
-
+    
+    clearInterval(startInterval);
+    startInterval = setInterval(arrowClickRight, 2000, '');
 }
+
+// change slide every 2 seconds when there is no interactions
+let startInterval = setInterval(arrowClickRight, 2000, '');
+

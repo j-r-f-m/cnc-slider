@@ -2,10 +2,23 @@ img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 300px;
+    width: 100%;
   }
 
 
 .mySlides {
   display: none;
+}
+
+.slideshow-container {
+  width: 50vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.numbertext {
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }

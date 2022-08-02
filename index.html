@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Slideshow container -->
+
+    <div class="content">
+            <!-- Slideshow container -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
@@ -16,23 +18,34 @@
             <div class="numbertext">1 / 3</div>
             <img src="images/img_1.jpg" >
             <div class="text">Caption Text</div>
+            <a class="prev" onclick="arrowClickLeft()">&#10094;</a>
+            <a class="next" onclick="arrowClickRight()">&#10095;</a>
         </div>
     
         <div class="mySlides fade two">
             <div class="numbertext">2 / 3</div>
             <img src="images/img_2.jpg" >
             <div class="text">Caption Two</div>
+            <a class="prev" onclick="arrowClickLeft()">&#10094;</a>
+            <a class="next" onclick="arrowClickRight()">&#10095;</a>
         </div>
     
         <div class="mySlides fade three">
             <div class="numbertext">3 / 3</div>
             <img src="images/img_3.jpg">
         <div class="text">Caption Three</div>
+        <a class="prev" onclick="arrowClickLeft()">&#10094;</a>
+        <a class="next" onclick="arrowClickRight()">&#10095;</a>
+        </div>
 
-        
+
+
+
     </div>
-    <a class="prev" onclick="arrowClickLeft()">&#10094;</a>
-    <a class="next" onclick="arrowClickRight()">&#10095;</a>
+    </div>
+
+
+
 
 
     <script src="index.js"></script>
